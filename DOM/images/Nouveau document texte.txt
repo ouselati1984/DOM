@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Hello from Mars!</h1>
+    <span class="text-desc" id="main-paragraph">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, quos
+      eveniet.
+    </span>
+    <span class="text-desc">
+      Quisquam veritatis, quam velit quos eligendi perferendis fugiat eveniet
+    </span>
+    <span id="without-style">
+      sapiente ratione assumenda iste repudiandae quidem dicta aliquid.
+      Voluptatibus, error?
+    </span>
+    <script>
+      var mainEl = document.getElementById('main-paragraph');
+      console.log('el:', mainEl);
+
+      var elClassName = mainEl.getAttribute('class');
+      console.log('elClassName:', elClassName);
+
+      var withoutStyleEl = document.getElementById('without-style');
+      console.log('el:', withoutStyleEl);
+
+      var withoutStyleElClassName = withoutStyleEl.getAttribute('class');
+      console.log('withoutStyleElClassName:', withoutStyleElClassName);
+    </script>
+  </body>
+</html>
+
